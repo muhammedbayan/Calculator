@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(233, 233, 233);
+    padding: 10px;
+}
+.calculator{
+    width: 100%;
+    max-width: 440px;
+    background-color: rgb(0, 0, 0);
+    padding: 20px;
+    margin: 10px auto 0;
+    border-radius: 7px;
+    box-shadow: 5px 5px 35px rgba(0, 0, 0, 0.5);
+}
+.screen{
+    width: 100%;
+    height: 80px;
+    padding: 0 12px;
+    background-color: rgb(10, 10, 10);
+    border-radius: 6px;
+}
+.screen input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    background: transparent;
+    color: white;
+    font-size: 45px;
+}
+.keys{
+    width: 100%;
+    padding-top: 20px;
+}
+
+.row button{
+    font-size: 25px;
+    width: 75px;
+    height: 75px;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+    margin: 10px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: rgb(41, 41, 41);
+    cursor: pointer;
+}
+.row button.zero{
+    padding: 0 87px;
+}
+.row button.orange{
+    background-color: rgb(255, 156, 9);
+}
+.row:nth-child(1) button:nth-child(-n+3){
+    background-color: rgb(126, 126, 126);
+    color: black;
+    font-weight: 500;
+}
+.row button:hover{
+    background-color: rgb(75, 75, 75);
+}
+.row button.orange:hover{
+    background-color: rgb(255, 185, 81);
+}
+.row:nth-child(1) button:nth-child(-n+3):hover{
+    background-color: rgb(179, 179, 179)
+}
